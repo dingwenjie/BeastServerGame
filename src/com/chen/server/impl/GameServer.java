@@ -40,9 +40,9 @@ public class GameServer extends ClientServer
 	private static GameServer server;
 	private static MessagePool messagePool = new MessagePool();
 	private static GameConfig gameConfig;
-	private static final String defaultGameConfig = "server-config/game-config.xml";
-	private static final String defaultClientServerConfig = "server-config/client-server-config.xml";
-	private static final String defaultPublicServerConfig = "server-config/public-server-config.xml";
+	private static final String defaultGameConfig = "BeastServerGame/server-config/game-config.xml";
+	private static final String defaultClientServerConfig = "BeastServerGame/server-config/client-server-config.xml";
+	private static final String defaultPublicServerConfig = "BeastServerGame/server-config/public-server-config.xml";
 	private OrderedQueuePoolExecutor decodeExecutor = new OrderedQueuePoolExecutor("网关消息解析队列",100,10000);
 	private OrderedQueuePoolExecutor worldExecutor = new OrderedQueuePoolExecutor("世界消息解析队列",1,-1);
 	private NonOrderedQueuePoolExecutor commandExecutor = new NonOrderedQueuePoolExecutor(100);
